@@ -1,0 +1,188 @@
+<html>
+
+<head>
+    <title>
+        My first webpage
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" src="https://cdn.vectorstock.com/i/1000v/42/38/tiger-logo-icon-vector-20754238.avif">
+    </div>
+    <div><img id="banner"
+            src="https://images.unsplash.com/photo-1645033393602-4f7623917853?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGhpbWFsYXlhc3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="sunset" height="360" </div>
+        <div>
+            <h2>About Vinsa</h2>
+        </div>
+
+
+
+        <div id="about">
+            <div id="description">
+                <p style="margin:0px ;">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco labori
+                    s nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe
+                    nderit in voluptate velit esse cillum dolore eu fugiat nulla par
+                </p>
+
+                <p>
+                    we also offer two industry based bootcamps
+                <ol>
+                    <li>
+                        <a href="https://www.udemy.com/course/the-ultimate-fullstack-web-development-bootcamp/"
+                            target="_blank">
+                            Vinsa fullstack bootcamp
+                        </a>
+                    </li>
+                    <li><a href="https://ineuron.ai/course/machine-learning-bootcamp-2024" target="_blank">
+                            Vinsa machine learing bootcamp
+                        </a>
+                    </li>
+                </ol>
+                </p>
+            </div>
+
+            <div id="team">
+                <img id="team-image" style="border-radius: 5px;" alt="team image"
+                    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHRlYW18ZW58MHx8MHx8fDA%3D">
+            </div>
+        </div>
+
+
+
+        <div>
+            <div id="jobs">
+                <div>
+                    <h2>Job Oppurtunities</h2>
+                </div>
+                <table id="jobs-table">
+                    <tr class="jobs-header-row">
+                        <th rowspan="2">Job title</th>
+                        <th colspan="2">Location</th>
+                        <th rowspan="2">Salary</th>
+                        <th rowspan="2">Posted on</th>
+                    </tr>
+                    <tr class="jobs-header-row">
+                        <th>city</th>
+                        <th>country</th>
+                    </tr>
+                    <tr class="jobs-data-row">
+                       <td>Frontend Developer</td> 
+                        <td>Bengaluru</td>
+                        <td>India</td>
+                        <td> ₹12,00,000</td>
+                        <td>Mar 3, 2023</td>
+                    </tr>
+                    <tr class="jobs-data-row">
+                        <td>Fullstack developer</td> 
+                         <td>New Delhi</td>
+                         <td>India</td>
+                         <td> ₹15,00,000</td>
+                         <td>Mar 6, 2023</td>
+                     </tr>
+                     <tr class="jobs-data-row">
+                        <td>DataScience</td> 
+                         <td>San Fransisco</td>
+                         <td>USA</td>
+                         <td>$70,000</td>
+                         <td>Apr 3, 2023</td>
+                     </tr>
+                     <tr class="jobs-data-row">
+                        <td>ML Engineer</td> 
+                         <td colspan="2">Remote</td>
+                         <td>$80,000</td>
+                         <td>Feb 1, 2024</td>
+                     </tr>
+                    
+                </table>
+            </div>
+
+            <div id="Application">
+                <h2>Submit Your Application</h2>
+
+
+                <form 
+                id="Application-form"
+                action="https://formbold.com/s/947Gj"
+                method="POST"
+                enctype="multipart/form-data" 
+                >
+                    <div class="form-group">
+                        <label for="name">Full name</label><br>
+                        <input type="text" id="name" name="Full name" required placeholder="Vinay">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Email">Email</label><br>
+                        <input type="email" id="Email" name="Email Address " required placeholder="Vined@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label><br>
+                        <input type="tel" id="phone" name="Phone" required placeholder="+910000000000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label><br>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="position">Position Applied</label><br>
+                        <select id="position" name="Position Applied" required>
+                            <option value="">select</option>
+                            <option value="Frontend developer"> Frontend Developer</option> 
+                            <option value="Backend developer"> Backend developer</option> 
+                            <option value="Data Scientist">Data Scientist</option> 
+                            <option value="ML Engineer"> ML Engineer</option> 
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resume">Upload Resume</label><br>
+                        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+                      </div>
+                      
+
+                    <div class="form-group">
+                        <label for="cover-letter">Cover Letter</label><br>
+                        <textarea id="cover-letter" name="cover-letter" rows="5" required placeholder="Explain what makes you suitable for the job..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="terms">
+                          <input type="checkbox" id="terms" name="terms" required>
+                          I Agree to the terms and conditions
+                        </label>
+                      </div>
+
+                      <div class="form-group">
+                        <input type="submit" value="Submit Application" >
+                      </div>
+                </form>
+                
+            </div>
+
+            <div id="footer">
+                <ul id="footer-links">
+                    <li>courses</li>
+                    <li>programs</li>
+                    <li><a href="https://www.youtube.com/watch?v=dX8396ZmSPk&t=1917s" target="_blank">
+                            Youtube
+                        </a>
+                    </li>
+                </ul>
+                <div id="copyright">© Vinsa 2024</div>
+            </div>
+        </div>
+
+</body>
+
+</html>

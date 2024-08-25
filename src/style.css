@@ -23,12 +23,13 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
     font-size: 2.25rem;
-    text-align: center;
-    margin: 8px 0px;
+
 }
 
 h2 {
     font-size: 2rem;
+        text-align: center;
+    margin: 12px 0px;
 }
 
 h3 {
@@ -76,6 +77,134 @@ a:hover,a:focus {
 
 }
 
+#about {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 8px;
+    max-width: 800px;
+}
+
+#description {
+    padding:  0px 10px;
+    font-size: 1.25rem;
+}
+
+#team {
+}
+
+#team-image {
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#jobs {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+#jobs-list{
+    display: block;
+}
+
+#jobs-table{
+    display: none;
+}
+
+.job {
+    border: 1px solid #dddddd;
+    margin-top: 8px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+
+.job-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #222222;
+}
+
+.job-detail {
+    margin-top: 4px; /* Optional: Adds spacing between job title and details */
+    color: #444444;
+}
+
+#application{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+#application-form label {
+    font-weight: 800; 
+}
+
+#application-form input,select,textarea {
+    padding: 8px;
+    width: 90%;
+    font-size: 1.25rem;
+    margin-top: 4px ;
+    border-radius: 5px;
+    border:  1px solid gray;
+}
+
+.form-group {
+    margin:  16px 0px;
+}
+
+.form-group textarea {
+    width: 80%;
+    font-family: 'Source Sans 3',sans-serif ;
+}
+
+.form-group input[type='checkbox'] {
+    height: 16px;
+    width: 16px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #3B82F6;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  
+h3 {
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.apply {
+    float:right;
+}
+
+#footer {
+    background-color: ghostwhite  ;
+    padding: 8px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#footer-links {
+    list-style: none;
+
+
+}
+
+#footer-links li {
+    margin: 8px 16px;
+}
+
+#copyright {
+    color: #4B5563;
+    font-size: 0.875rem;
+}
+
+
 
 
 /* for tablets*/
@@ -90,22 +219,123 @@ a:hover,a:focus {
     
     }
 
+    h2 {
+        
+        margin: 16px 0px;
+    }
+    #application-form input,select,textarea {
+        width: auto;
+    }
+
+    
+h3 {
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.apply {
+    float:right;
+}
+
+#footer {
+    background-color: ghostwhite  ;
+    padding: 8px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#footer-links {
+    list-style: none;
+
+
+}
+
+#footer-links li {
+    display: inline ;
+    margin: 0px 16px;
+}
+
+#copyright {
+    color: #4B5563;
+    font-size: 0.875rem;
+}
+
 
 }
 
 
-/* for tablets*/
+/* for laptops*/
 @media screen and (min-width : 768px) {
 
     html {
 
-        font-size: 20px;
+        font-size: 16px;
     }
 
     #banner {
         height: 300px;
     
     }
+
+    h2 {
+        
+        margin: 20px 0px;
+    }
+
+    #about {
+        display: flex;
+        flex-direction:row ;
+        margin: 0 auto;
+        padding: 8px;
+        max-width: 800px;
+    }
+
+    #description {
+        padding:  0px 10px;
+        font-size: 1.25rem;
+        max-width: 50%;
+    }
+
+    #jobs {
+        min-width: 800px;
+    }
+
+    #jobs-list {
+        display: none;
+    }
+    #jobs-table{
+        display: table;
+    }
+
+    #jobs-table {
+        width: 100%;
+        border: 1px solid gray;
+        border-collapse: collapse ;
+    }
+    
+    .jobs-header-row th {
+        border: 1px solid gray;
+        background-color: #BFDBFE;
+        padding: 8px;
+        text-align: center;
+    }
+    
+    #jobs-table tr:nth-child(odd) {
+        background-color: #EFF6FF;
+    }
+    
+    
+    .jobs-data-row td {
+        border: 1px solid gray;
+        padding: 8px;
+    }
+    
+    #application{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 8px;
+    }
+
 
 
 
@@ -147,136 +377,16 @@ h2 {
 
 
 
-#about {
-    display: flex;
-    margin: 0 auto;
-    padding: 8px;
-    max-width: 800px;
-}
-
-#description {
-    width: 50%;
-    padding:  0px 10px;
-    font-size: 1.25rem;
-
-
- 
-    
-}
-
-#team {
-    width: 50%;
-   
-    
-}
-
-#team-image {
-    width: 100%;
-    max-width: 500px;
-    max-height: 500px;
-}
-
-
-#jobs {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 8px;
-}
-#jobs-table {
-    width: 100%;
-    border: 1px solid gray;
-    border-collapse: collapse ;
-}
-
-.jobs-header-row th {
-    border: 1px solid gray;
-    background-color: #BFDBFE;
-    padding: 8px;
-    text-align: center;
-}
-
-#jobs-table tr:nth-child(odd) {
-    background-color: #EFF6FF;
-}
-
-
-.jobs-data-row td {
-    border: 1px solid gray;
-    padding: 8px;
-}
-
-#application{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 8px;
-}
-
-#application-form label {
-    font-weight: 800; 
-}
-
-#application-form input,select,textarea {
-    padding: 8px;
-    font-size: 1.25rem;
-    margin-top: 4px ;
-    border-radius: 5px;
-    border:  1px solid gray;
-}
-
-.form-group {
-    margin:  16px 0px;
-}
-
-.form-group textarea {
-    width: 80%;
-    font-family: 'Source Sans 3',sans-serif ;
-}
-
-.form-group input[type='checkbox'] {
-    height: 16px;
-    width: 16px;
-}
-
-.form-group input[type="submit"] {
-    background-color: #3B82F6;
-    color: white;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  
 
 
 
-h3 {
-    margin-bottom: 4px;
-    margin-top: 0px;
-}
-
-.apply {
-    float:right;
-}
-
-#footer {
-    background-color: ghostwhite  ;
-    padding: 8px;
-    margin-top: 32px;
-    text-align: center;
-}
-
-#footer-links {
-    list-style: none;
 
 
-}
 
-#footer-links li {
-    display: inline ;
-    margin: 0px 16px;
-}
 
-#copyright {
-    color: #4B5563;
-    font-size: 0.875rem;
-}
+
+
+
+
 
 */
